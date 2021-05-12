@@ -21,7 +21,7 @@ on the console. The app-specific configuration is contained in fil `httpd-ssl.co
 In this example, I'll be running two instances of the Python HTTP server `http.server` from my home folder, listening
 on ports 8000 and 8100, each of which exposing my home folder contents, for example, <http://localhost:8000/Downloads>.
 
-To point at your app, tou need to change the nodes, their ports, and the `/Downloads` path by pointing at your app.
+To point at your app, you need to change the nodes, their ports, and the `/Downloads` path by pointing at your app.
 Also, if you use application servers like Tomcat or Wildfly, you can also switch to the AJP protocol instead of HTTP,
 for example:
 ```
