@@ -90,4 +90,5 @@ http://host.docker.internal:8100 | node2 |            | 1.00   | 0   | Init Ok |
 * <https://devcenter.heroku.com/articles/ssl-certificate-self>
 * <https://hub.docker.com/_/httpd>
 * <https://docs.docker.com/docker-for-mac/networking/> (`host.docker.internal`)
+* https://httpd.apache.org/docs/2.4/mod/mod_proxy_balancer.html
 
