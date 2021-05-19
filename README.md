@@ -65,7 +65,11 @@ docker exec apache-cluster apachectl restart
 
 Issue the following command from two terminals (you'll need Python 3 installed):
 ```
+cd ~
 python3 -m http.server 8000
+```
+```
+cd ~
 python3 -m http.server 8100
 ```
 
@@ -77,7 +81,7 @@ Worker URL                       | Route | RouteRedir | Factor | Set | Status  |
 http://host.docker.internal:8000 | node1 |            | 1.00   | 0   | Init Ok | 0       | 0    | 0    | 0  | 0
 http://host.docker.internal:8100 | node2 |            | 1.00   | 0   | Init Ok | 0       | 0    | 0    | 0  | 0
 
-If you now open the URL <https://localhost/app> from two different browsers, you'll see those numbers changing for both
+If you now open the URL <https://localhost/Downloads> from two different browsers, you'll see those numbers changing for both
 nodes, indicating that requests are being served by them.
 
 Worker URL                       | Route | RouteRedir | Factor | Set | Status  | Elected | Busy | Load | To   | From
